@@ -11,11 +11,13 @@ namespace WindowsFormsApp1
         public double a; // первая сторона 
         public double b; // вторая сторона
         public double c; // третья сторона
-        public Triangle (double A, double B, double C)
+        public double d; // четвертая сторона
+        public Triangle (double A, double B, double C,double D)
         {
             a = A;
             b = B;
             c = C;
+            d = D;
         }
         public string outputA() // выводим сторону а, данный метод возвращает строковое значение
         {
@@ -29,12 +31,24 @@ namespace WindowsFormsApp1
         {
             return Convert.ToString(c);
         }
+        public string outputD()
+        {
+             return Convert.ToString(d);
+           
+        }
         public double Perimeter() // сумма всех сторон типо double
         {
             double p = 0;
             p = a + b + c; // вычисление
             return p; // возврат
         }
+        public double SemiPerimeter() 
+        {
+            double p = 0;
+            p = (a + b + c) / 2; // вычисление
+            return p; // возврат
+        }
+
         public double Surface() // аналогично периметру
         {
             double s = 0;
@@ -63,6 +77,13 @@ namespace WindowsFormsApp1
             { return c; }
             set
             { c = value; }
+        }
+        public double GetSetD
+        {
+            get
+            { return d; }
+            set
+            { d = value; }
         }
         public bool ExistTriangle // свойство позволяющее установить, существует ои треугольник с задаными сторонами
         {
