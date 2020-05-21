@@ -8,16 +8,24 @@ namespace WindowsFormsApp1
 {
     class Triangle
     {
-        public double a; // первая сторона 
-        public double b; // вторая сторона
-        public double c; // третья сторона
-        public double d; // четвертая сторона
-        public Triangle (double A, double B, double C,double D)
+        public double a;
+        public double b;
+        public double c;
+        public double h;
+        public Triangle(double A, double B, double C)
+        {
+
+            a = A;
+            b = B;
+            c = C;
+        }
+
+        public Triangle (double A, double B, double C,double H)
         {
             a = A;
             b = B;
             c = C;
-            d = D;
+            h = H;
         }
         public string outputA() // выводим сторону а, данный метод возвращает строковое значение
         {
@@ -31,9 +39,9 @@ namespace WindowsFormsApp1
         {
             return Convert.ToString(c);
         }
-        public string outputD()
+        public string outputH()
         {
-             return Convert.ToString(d);
+             return Convert.ToString(h);
            
         }
         public double Perimeter() // сумма всех сторон типо double
@@ -57,6 +65,13 @@ namespace WindowsFormsApp1
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return s;
         }
+        public double Height()
+        {
+            double p = SemiPerimeter();
+            double h = 2 * Math.Sqrt(p * (p - a) * (p - b) * (p - c)) / a;
+            return h;
+        }
+
         public double GetSetA // свойство позволяющее установить либо изменить значение стороны а
         {
             get //устанавливаем
@@ -78,12 +93,12 @@ namespace WindowsFormsApp1
             set
             { c = value; }
         }
-        public double GetSetD
+        public double GetSetH
         {
             get
-            { return d; }
+            { return h; }
             set
-            { d = value; }
+            { h = value; }
         }
         public bool ExistTriangle // свойство позволяющее установить, существует ои треугольник с задаными сторонами
         {
