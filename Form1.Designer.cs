@@ -57,6 +57,7 @@
             this.Run_button.Text = "Запуск";
             this.Run_button.UseVisualStyleBackColor = false;
             this.Run_button.Click += new System.EventHandler(this.Run_button_Click);
+            this.Run_button.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Run_button_DoubleClick);
             // 
             // listView1
             // 

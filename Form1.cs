@@ -61,10 +61,27 @@ namespace WindowsFormsApp1
 
         private void label2_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void Run_button_DoubleClick(object sender, MouseEventArgs e)
+        {
+            Form2 from = new Form2();
+            from.Show();
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
