@@ -129,25 +129,3 @@ namespace WindowsFormsApp1
 
     }
 }
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
