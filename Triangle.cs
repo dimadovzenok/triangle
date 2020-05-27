@@ -109,8 +109,27 @@ namespace WindowsFormsApp1
                 else return true;
             }
         }
+
+
+        public string TirangleType // типы треугольников
+        {
+            get
+            {
+                if  ((a == b) && (b == c) && (c == a))
+                {
+                    return  "Равносторонний треугольник";
+                }
+                else if  ((a == b) || (b == c) || (a == c))
+                {
+                    return  "Равнобедренный треугольник";
+                }
+                else return "Разносторонний треугольник";
+            }
+        }
+
     }
 }
+            
 
 
 

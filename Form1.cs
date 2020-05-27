@@ -16,10 +16,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
-        }
         private void Run_button_Click(object sender, EventArgs e)
         {
             double a, b, c;
@@ -32,11 +28,10 @@ namespace WindowsFormsApp1
             listView1.Items.Add("Сторона а");
             listView1.Items.Add("Сторона b");
             listView1.Items.Add("Сторона c");
-
+            listView1.Items.Add("Высота  h");
             listView1.Items.Add("Периметр");
             listView1.Items.Add("Площадь");
             listView1.Items.Add("Полупериметр");
-
             listView1.Items.Add("Существует?");
             listView1.Items.Add("Спецификатор");
 
@@ -49,8 +44,32 @@ namespace WindowsFormsApp1
             if (triangle.ExistTriangle) { listView1.Items[6].SubItems.Add("Существует"); }
             else listView1.Items[6].SubItems.Add("Не существует");
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+
+
+
+
 
 
 

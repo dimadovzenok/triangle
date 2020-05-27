@@ -36,6 +36,11 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
             this.txtA = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Run_button
@@ -45,7 +50,7 @@
             this.Run_button.FlatAppearance.BorderSize = 10;
             this.Run_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Run_button.Font = new System.Drawing.Font("Mongolian Baiti", 27.75F);
-            this.Run_button.Location = new System.Drawing.Point(710, 0);
+            this.Run_button.Location = new System.Drawing.Point(669, 29);
             this.Run_button.Name = "Run_button";
             this.Run_button.Size = new System.Drawing.Size(167, 108);
             this.Run_button.TabIndex = 0;
@@ -76,30 +81,76 @@
             // 
             // txtB
             // 
-            this.txtB.Location = new System.Drawing.Point(83, 214);
+            this.txtB.Location = new System.Drawing.Point(165, 214);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(111, 20);
             this.txtB.TabIndex = 2;
             // 
             // txtC
             // 
-            this.txtC.Location = new System.Drawing.Point(83, 240);
+            this.txtC.Location = new System.Drawing.Point(165, 240);
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(111, 20);
             this.txtC.TabIndex = 3;
             // 
             // txtA
             // 
-            this.txtA.Location = new System.Drawing.Point(83, 188);
+            this.txtA.Location = new System.Drawing.Point(165, 188);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(111, 20);
             this.txtA.TabIndex = 4;
+            this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(630, 165);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(206, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Chartreuse;
+            this.label1.Location = new System.Drawing.Point(80, 191);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Сторона А";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Chartreuse;
+            this.label2.Location = new System.Drawing.Point(80, 214);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Сторона B";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Chartreuse;
+            this.label3.Location = new System.Drawing.Point(80, 240);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Сторона C";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 361);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtA);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtB);
@@ -109,6 +160,7 @@
             this.Name = "Form1";
             this.Text = "Работа с треугольником";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +175,10 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
