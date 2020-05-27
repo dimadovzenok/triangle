@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-        private void Run_button_Click(object sender, EventArgs e)
+        private void Run_button_Click (object sender, EventArgs e)
         {
             double a, b, c;
             a = Convert.ToDouble(txtA.Text);
