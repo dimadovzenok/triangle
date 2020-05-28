@@ -135,7 +135,7 @@ namespace WindowsFormsApp1
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+           
         }
 
         #endregion

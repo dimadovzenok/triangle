@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
@@ -12,6 +13,7 @@ namespace WindowsFormsApp1
         public double b;
         public double c;
         public double h;
+        public string answer;
         public Triangle(double A, double B, double C)
         {
 
@@ -72,6 +74,7 @@ namespace WindowsFormsApp1
             return h;
         }
 
+       
         public double GetSetA // свойство позволяющее установить либо изменить значение стороны а
         {
             get //устанавливаем
@@ -111,21 +114,36 @@ namespace WindowsFormsApp1
         }
 
 
-        public string TirangleType // типы треугольников
+        public string TriangleType() // типы треугольников
         {
-            get
             {
                 if  ((a == b) && (b == c) && (c == a))
                 {
-                    return  "Равносторонний треугольник";
+                    return  "Равносторонний";
                 }
                 else if  ((a == b) || (b == c) || (a == c))
                 {
-                    return  "Равнобедренный треугольник";
+                    return  "Равнобедренный";
                 }
-                else return "Разносторонний треугольник";
+                else return "Разносторонний";
             }
         }
-
+        public string ImageType()// изменение картинки 
+        {
+            string image = "";
+            if (answer == "Равносторонний") 
+            {
+                image = @"C:\Users\PC\source\repos\WindowsFormsApp1\WindowsFormsApp1\image\ravno.png"; 
+            }
+            if (answer == "Равнобедренный") //проверяем условие
+            {
+                image = @"C:\Users\PC\source\repos\WindowsFormsApp1\WindowsFormsApp1\image\ravnobed.png"; 
+            }
+            if (answer == "Разносторонний") //проверяем условие
+            {
+                image = @"C:\Users\PC\source\repos\WindowsFormsApp1\WindowsFormsApp1\image\raznost.png"; 
+            }
+            return image;
+        }
     }
 }
