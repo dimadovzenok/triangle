@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
+
 
 namespace WindowsFormsApp1
 {
@@ -29,6 +26,7 @@ namespace WindowsFormsApp1
             c = C;
             h = H;
         }
+
         public string outputA() // выводим сторону а, данный метод возвращает строковое значение
         {
             return Convert.ToString(a); // a - ссылка на внутренее поле обьекта класса
@@ -116,17 +114,20 @@ namespace WindowsFormsApp1
 
         public string TriangleType() // типы треугольников
         {
-            {
-                if  ((a == b) && (b == c) && (c == a))
-                {
-                    return  "Равносторонний";
-                }
-                else if  ((a == b) || (b == c) || (a == c))
-                {
-                    return  "Равнобедренный";
-                }
-                else return "Разносторонний";
-            }
+           
+           if  ((a == b) && (b == c) && (c == a))
+           {
+                answer = "Равносторонний";
+           }
+           else if  ((a == b) || (b == c) || (a == c))
+           {
+                answer = "Равнобедренный";
+           }
+           else
+           {
+                answer = "Разносторонний";
+           }
+            return answer;
         }
         public string ImageType()// изменение картинки 
         {
