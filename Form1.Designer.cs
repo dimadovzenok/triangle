@@ -79,6 +79,7 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Значение";
+            this.columnHeader2.Width = 141;
             // 
             // txtB
             // 
@@ -107,7 +108,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(630, 165);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size (206, 173);
+            this.pictureBox1.Size = new System.Drawing.Size(206, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -116,7 +117,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Chartreuse;
-            this.label1.Location = new System.Drawing.Point (80, 191);
+            this.label1.Location = new System.Drawing.Point(80, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 6;
