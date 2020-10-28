@@ -22,10 +22,9 @@ namespace WindowsFormsApp1
         Pen p = new Pen(Brushes.Black, 2);
         Panel panel1;
         PictureBox pictureBox1;
-        private double a, b ,c , h;
 
         public Form3()
-        {
+        { 
             this.BackgroundImage = Image.FromFile("C:/Users/opilane/source/repos/triangle2/image/fon.png");
 
             this.Size = new Size(600, 600);
