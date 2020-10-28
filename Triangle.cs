@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
             return p; // возврат
         }
 
-        public double Surface() // аналогично периметру
+        public double Surface() 
         {
             double s = 0;
             double p = 0;
