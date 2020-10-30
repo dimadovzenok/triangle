@@ -21,3 +21,15 @@ C:\Users\opilane\source\repos\triangle2\obj\Debug\WindowsFormsApp1.csproj.Genera
 C:\Users\opilane\source\repos\triangle2\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\opilane\source\repos\triangle2\obj\Debug\WindowsFormsApp1.exe
 C:\Users\opilane\source\repos\triangle2\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\opilane\Source\Repos\triangle\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\opilane\Source\Repos\triangle\bin\Debug\WindowsFormsApp1.exe
+C:\Users\opilane\Source\Repos\triangle\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.Form2.resources
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.exe
+C:\Users\opilane\Source\Repos\triangle\obj\Debug\WindowsFormsApp1.pdb

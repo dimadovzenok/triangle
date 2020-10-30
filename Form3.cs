@@ -18,14 +18,20 @@ namespace WindowsFormsApp1
         RadioButton r1, r2;
         Label lblA, lblB, lblC, lblH;
         TextBox txtA, txtB, txtC, txtH;
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
         Graphics gp;
         Pen p = new Pen(Brushes.Black, 2);
         Panel panel1;
         PictureBox pictureBox1;
 
         public Form3()
-        { 
-            this.BackgroundImage = Image.FromFile("C:/Users/opilane/source/repos/triangle2/image/fon.png");
+        {
+            this.BackgroundImage = new Bitmap(@"..\..\image\fon.png");
 
             this.Size = new Size(600, 600);
             this.Text = "Треугольник";
@@ -120,7 +126,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(panel1);
 
             pictureBox1 = new PictureBox();
-            pictureBox1.Image = new Bitmap("C:/Users/opilane/source/repos/triangle2/image/image.png");
+            pictureBox1.Image = new Bitmap(@"..\..\image\image.png");
             pictureBox1.Location = new Point(300, 300);
             pictureBox1.Size = new Size(250, 250);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;

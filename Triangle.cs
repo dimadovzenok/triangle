@@ -134,15 +134,15 @@ namespace WindowsFormsApp1
             string image = "";
             if (answer == "Равносторонний") 
             {
-                image = @"C:\Users\opilane\source\repos\triangle2\image\ravno.png"; 
+                image = (@"..\..\image\ravno.png"); ; 
             }
             if (answer == "Равнобедренный") //проверяем условие
             {
-                image = @"C:\Users\opilane\source\repos\triangle2\image\ravnobed.png"; 
+                image = (@"..\..\image\ravnobed.png"); 
             }
             if (answer == "Разносторонний") //проверяем условие
             {
-                image = @"C:\Users\opilane\source\repos\triangle2\image\raznost.png"; 
+                image = (@"..\..\image\raznost.png");
             }
             return image;
         }
